@@ -1,6 +1,8 @@
 import { Stack, Flex, Button } from "@chakra-ui/react";
+import { UseDisclosure } from "@chakra-ui/react";
 
-const Login = () => {
+const Auth = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Stack>
       <Flex>
@@ -14,4 +16,4 @@ const Login = () => {
     </Stack>
   );
 };
-export default Login;
+export default Auth;

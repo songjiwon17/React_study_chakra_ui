@@ -1,24 +1,16 @@
-import {
-  Divider,
-  Stack,
-  Grid,
-  GridItem,
-  Box,
-  HStack,
-  Container,
-} from "@chakra-ui/react";
+import { Divider, Stack, Grid, GridItem, Box } from "@chakra-ui/react";
 import Header from "./Header";
 import Card from "./Card";
 
 const Home = () => {
   return (
-    <Container maxW="1200px" m="0 auto">
+    <div>
       <Header />
       <Divider />
-      <Stack mb="40px" p={5} bg="green">
+      <Stack maxW="1200px" m="0 auto 40px" p={5} bg="green">
         <Card />
       </Stack>
-      <HStack spacing="24px">
+      <Stack direction={["column", "row"]} m="0 auto" spacing="24px">
         <Box w="40px" h="40px" bg="yellow.200">
           1
         </Box>
@@ -28,8 +20,10 @@ const Home = () => {
         <Box w="40px" h="40px" bg="pink.100">
           3
         </Box>
-      </HStack>
+      </Stack>
       <Grid
+        maxW="1200px"
+        m="0 auto"
         h="200px"
         templateRows="repeat(2, 1fr)"
         templateColumns="repeat(5, 1fr)"
@@ -40,7 +34,7 @@ const Home = () => {
         <GridItem colSpan={2} bg="pink" />
         <GridItem colSpan={4} bg="tomato" />
       </Grid>
-    </Container>
+    </div>
   );
 };
 export default Home;

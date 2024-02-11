@@ -30,6 +30,8 @@ const Home = () => {
         </Box>
       </HStack>
       <Grid
+        maxW="1200px"
+        m="0 auto"
         h="200px"
         templateRows="repeat(2, 1fr)"
         templateColumns="repeat(5, 1fr)"

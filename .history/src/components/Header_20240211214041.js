@@ -1,5 +1,5 @@
 import { Stack, Text, Flex } from "@chakra-ui/react";
-import Auth from "./Auth";
+import Login from "./Login";
 import ModeButton from "./ModeButton";
 
 const Header = () => {
@@ -11,7 +11,7 @@ const Header = () => {
         </Text>
         <Flex>
           <ModeButton />
-          <Auth />
+          <Login />
         </Flex>
       </Flex>
     </Stack>
