@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Image, Badge } from "@chakra-ui/react";
 
 const Card = () => {
   const property = {
@@ -13,24 +13,33 @@ const Card = () => {
   };
   return (
     <Box
-      maxW="340px"
-      h="420px"
+      maxW="350px"
+      h="450px"
       borderRadius="5%"
       overflow="hidden"
+      bg="#fff"
       cursor="pointer"
     >
       {/* <Image src={property.imageUrl} alt={property.imageAlt} /> */}
       <Box h="300px" bg="green"></Box>
 
       <Box p="5">
-        <Box mt="2" fontWeight="bold" as="h3" lineHeight="tight" noOfLines={1}>
+        <Box
+          mt="1"
+          fontWeight="semibold"
+          as="h3"
+          lineHeight="tight"
+          noOfLines={1}
+        >
           {property.title}
         </Box>
-        <Box mt="1" fontWeight="semibold">
-          {property.formattedPrice}
-        </Box>
-        <Box as="span" color="gray.600" fontSize="sm">
-          {property.reviewCount} reviews
+
+        <Box>{property.formattedPrice}</Box>
+
+        <Box display="flex" mt="2" alignItems="center">
+          <Box as="span" ml="2" color="gray.600" fontSize="sm">
+            {property.reviewCount} reviews
+          </Box>
         </Box>
       </Box>
     </Box>

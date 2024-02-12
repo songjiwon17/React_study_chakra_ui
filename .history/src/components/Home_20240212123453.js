@@ -1,15 +1,11 @@
 import { Divider, Container } from "@chakra-ui/react";
 import Header from "./Header";
-import Contents from "./Contents";
-import Footer from "./Footer";
 
 const Home = () => {
   return (
-    <Container maxW="100%" m="0 auto">
+    <Container maxW="1200px" m="0 auto">
       <Header />
       <Divider />
-      <Contents />
-      <Footer />
     </Container>
   );
 };

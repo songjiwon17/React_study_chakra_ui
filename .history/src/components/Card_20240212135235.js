@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Image, Badge } from "@chakra-ui/react";
 
 const Card = () => {
   const property = {
@@ -17,6 +17,7 @@ const Card = () => {
       h="420px"
       borderRadius="5%"
       overflow="hidden"
+      bg="#fff"
       cursor="pointer"
     >
       {/* <Image src={property.imageUrl} alt={property.imageAlt} /> */}

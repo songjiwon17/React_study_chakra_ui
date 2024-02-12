@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <Stack maxW="1400px" m="0 auto" p={5}>
       <Flex justify="space-between">
-        <Text fontSize="24px" as="b" colorScheme="#333">
+        <Text fontSize="24px" as="b" color="#333">
           LOGO
         </Text>
         <Flex>

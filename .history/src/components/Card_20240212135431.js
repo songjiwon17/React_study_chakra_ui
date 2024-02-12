@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Image, Badge } from "@chakra-ui/react";
 
 const Card = () => {
   const property = {
